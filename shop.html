@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Bloomy Hook</title>
+    <meta name="description" content="Shop meaningful, handmade crochet items by Bloomy Hook.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.jpg" alt="Bloomy Hook Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="shop-header">
+            <h1 class="section-title">Our Collections</h1>
+            <p class="text-center">Handmade treasures for you and your loved ones.</p>
+        </section>
+
+        <section class="shop-layout">
+            <aside class="filters">
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <div class="custom-dropdown" id="category-dropdown">
+                        <div class="dropdown-selected">All Items</div>
+                        <div class="dropdown-options">
+                            <div class="dropdown-option" data-value="all">All Items</div>
+                            <div class="dropdown-option" data-value="wearables">Wearables</div>
+                            <div class="dropdown-option" data-value="home-decor">Home Decor</div>
+                            <div class="dropdown-option" data-value="plushies">Plushies</div>
+                            <div class="dropdown-option" data-value="accessories">Accessories</div>
+                            <div class="dropdown-option" data-value="flowers">Flowers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="custom-dropdown" id="price-dropdown">
+                        <div class="dropdown-selected">All Prices</div>
+                        <div class="dropdown-options">
+                            <div class="dropdown-option" data-value="all">All Prices</div>
+                            <div class="dropdown-option" data-value="under-500">Under Rs. 500</div>
+                            <div class="dropdown-option" data-value="500-1000">Rs. 500 - Rs. 1000</div>
+                            <div class="dropdown-option" data-value="over-1000">Over Rs. 1000</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="product-grid shop-grid">
+                <!-- 1. Blushing Rose Bouquet (Modified) -->
+                <div class="product-card" data-category="flowers" data-price="350">
+                    <img src="images/rose-bouquet.png" alt="Blushing Rose Bouquet" class="product-thumb">
+                    <h3>Blushing Rose Bouquet</h3>
+                    <p class="price">From Rs. 350 / flower</p>
+                    <div class="product-actions">
+                        <a href="product-details.html?id=rose-bouquet" class="btn btn-outline btn-sm">View Details</a>
+                        <a href="https://wa.me/923350298926?text=Hi!%20I%20want%20to%20order%20the%20Blushing%20Rose%20Bouquet"
+                            class="btn btn-sm" target="_blank">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- 2. Cozy Berry Cardigan (Modified) -->
+                <div class="product-card" data-category="wearables" data-price="6000">
+                    <img src="images/berry-cardigan.png" alt="Cozy Berry Cardigan" class="product-thumb">
+                    <h3>Cozy Berry Cardigan</h3>
+                    <p class="price">From Rs. 6000</p>
+                    <a href="product-details.html?id=berry-cardigan" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 3. The Bibilophile's Bloom (Home Decor) -->
+                <div class="product-card" data-category="home-decor" data-price="400">
+                    <img src="images/bibilophile-bloom.jpg" alt="The Bibilophile's Bloom" class="product-thumb">
+                    <h3>The Bibilophile's Bloom</h3>
+                    <p class="price">Rs. 400</p>
+                    <a href="product-details.html?id=blush-coaster" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 4. Ghostly Charm Keychain (Accessories) -->
+                <div class="product-card" data-category="accessories" data-price="300">
+                    <img src="images/ghost-plush.jpg" alt="Ghostly Charm Keychain" class="product-thumb">
+                    <h3>Ghostly Charm Keychain</h3>
+                    <p class="price">Rs. 300</p>
+                    <a href="product-details.html?id=ghost-keychain" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 5. Dark Knight Buddy (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="750">
+                    <img src="images/batman-buddy.jpg" alt="Dark Knight Buddy" class="product-thumb">
+                    <h3>Dark Knight Buddy</h3>
+                    <p class="price">Rs. 750</p>
+                    <a href="product-details.html?id=batman-keychain" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 6. Midnight Comfort Muffler (Wearables) -->
+                <div class="product-card" data-category="wearables" data-price="2500">
+                    <img src="images/comfort-muffler.jpg" alt="Midnight Comfort Muffler" class="product-thumb">
+                    <h3>Midnight Comfort Muffler</h3>
+                    <p class="price">From Rs. 2500</p>
+                    <a href="product-details.html?id=midnight-muffler" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 7. Ruffled Bloom Scrunchies (Accessories) -->
+                <div class="product-card" data-category="accessories" data-price="250">
+                    <img src="images/ruffle-scrunchies.jpg" alt="Ruffled Bloom Scrunchies" class="product-thumb">
+                    <h3>Ruffled Bloom Scrunchies</h3>
+                    <p class="price">From Rs. 250</p>
+                    <a href="product-details.html?id=ruffled-scrunchies" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 8. Snowy Bow Bunny (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="1500">
+                    <img src="images/snowy-bunny.jpg" alt="Snowy Bow Bunny" class="product-thumb">
+                    <h3>Snowy Bow Bunny</h3>
+                    <p class="price">From Rs. 1500</p>
+                    <a href="product-details.html?id=snowy-bunny" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 9. Strawberry Fields Plush (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="1500">
+                    <img src="images/strawberry-plush.png" alt="Strawberry Fields Plush" class="product-thumb">
+                    <h3>Strawberry Fields Plush</h3>
+                    <p class="price">From Rs. 1500</p>
+                    <a href="product-details.html?id=strawberry-plush" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 10. Sunflower Coaster Set (Home Decor) -->
+                <div class="product-card" data-category="home-decor" data-price="500">
+                    <img src="images/sunflower-coasters.png" alt="Sunflower Coaster Set" class="product-thumb">
+                    <h3>Sunflower Coaster Set</h3>
+                    <p class="price">Rs. 500 (Set of 5)</p>
+                    <a href="product-details.html?id=sunflower-coaster" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 11. Pastel Pink Beanie (Wearables) -->
+                <div class="product-card" data-category="wearables" data-price="1100">
+                    <img src="images/pink-beanie.jpg" alt="Pastel Pink Beanie" class="product-thumb">
+                    <h3>Pastel Pink Beanie</h3>
+                    <p class="price">Rs. 1100</p>
+                    <a href="product-details.html?id=pastel-beanie" class="btn btn-outline">View Details</a>
+                </div>
+
+
+
+                <!-- 13. Ruby Red Bow Clip (Accessories) -->
+                <div class="product-card" data-category="accessories" data-price="400">
+                    <img src="images/red-bow-clip.jpg" alt="Ruby Red Bow Clip" class="product-thumb">
+                    <h3>Ruby Red Bow Clip</h3>
+                    <p class="price">Rs. 400</p>
+                    <a href="product-details.html?id=ruby-bow" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 14. Cozy Heart Pillows (Pair) (Home Decor) -->
+                <div class="product-card" data-category="home-decor" data-price="2500">
+                    <img src="images/heart-pillows.jpg" alt="Cozy Heart Pillows (Pair)" class="product-thumb">
+                    <h3>Cozy Heart Pillows (Pair)</h3>
+                    <p class="price">Rs. 2500</p>
+                    <a href="product-details.html?id=heart-pillows" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 15. Blushing Tulip Desk Set (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="800">
+                    <img src="images/tulip-set.png" alt="Blushing Tulip Desk Set" class="product-thumb">
+                    <h3>Blushing Tulip Desk Set</h3>
+                    <p class="price">Rs. 800</p>
+                    <a href="product-details.html?id=tulip-desk" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 16. Lily Keychain (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="800">
+                    <img src="images/lily-keychain.jpg" alt="Lily Flower" class="product-thumb">
+                    <h3>Lily Flower</h3>
+                    <p class="price">Rs. 800</p>
+                    <a href="product-details.html?id=flower-keychain" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- ADDED FLOWERS (To reach 10) -->
+                <!-- 17. Sunflower Bouquet (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="1300">
+                    <img src="images/sunflower-bouquet.png" alt="Sunshine Sunflower Bouquet" class="product-thumb">
+                    <h3>Sunshine Sunflower Bouquet</h3>
+                    <p class="price">Rs. 1300</p>
+                    <a href="product-details.html?id=sunflower-bouquet" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 18. Lavender Pot (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="600">
+                    <img src="images/lavender-pot.jpg" alt="Lavender Dream Pot" class="product-thumb">
+                    <h3>Lavender Dream Pot</h3>
+                    <p class="price">Rs. 600</p>
+                    <a href="product-details.html?id=lavender-pot" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 19. Pink Peony Display (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="700">
+                    <img src="images/peony-display.jpg" alt="Regal Pink Peony" class="product-thumb">
+                    <h3>Regal Pink Peony</h3>
+                    <p class="price">Rs. 700</p>
+                    <a href="product-details.html?id=pink-peony" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 20. White Jasmine Stem (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="700">
+                    <img src="images/jasmine-stem.png" alt="White Jasmine Stem" class="product-thumb">
+                    <h3>White Jasmine Stem</h3>
+                    <p class="price">Rs. 700</p>
+                    <a href="product-details.html?id=jasmine-stem" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 21. Blue Hydrangea Cluster (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="700">
+                    <img src="images/hydrangea-cluster.jpg" alt="Blue Hydrangea Cluster" class="product-thumb">
+                    <h3>Blue Hydrangea Cluster</h3>
+                    <p class="price">Rs. 700</p>
+                    <a href="product-details.html?id=hydrangea-cluster" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 22. Orchid Desk Bloom (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="700">
+                    <img src="images/orchids.png" alt="Orchid Desk Bloom" class="product-thumb">
+                    <h3>Orchid Desk Bloom</h3>
+                    <p class="price">Rs. 700</p>
+                    <a href="product-details.html?id=orchid-bloom" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 23. Crimson Rose Bouquet (Flowers) -->
+                <div class="product-card" data-category="flowers" data-price="650">
+                    <img src="images/red-rose-bouquet.jpg" alt="Crimson Rose Bouquet" class="product-thumb">
+                    <h3>Crimson Rose Bouquet</h3>
+                    <p class="price">Rs. 650</p>
+                    <a href="#" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- ADDED PLUSHIES (To reach 10) -->
+                <!-- 24. Mini Whale (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="400">
+                    <img src="images/blue-whale.png" alt="Ocean Blue Whale" class="product-thumb">
+                    <h3>Ocean Blue Whale</h3>
+                    <p class="price">Rs. 400</p>
+                    <a href="product-details.html?id=mini-whale" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 25. Bumble Bee Buddy (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="750">
+                    <img src="images/bumble-bee.png" alt="Bumble Bee Buddy" class="product-thumb">
+                    <h3>Bumble Bee Buddy</h3>
+                    <p class="price">Rs. 750</p>
+                    <a href="product-details.html?id=bumble-bee" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 26. Sleepy Sloth (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="1300">
+                    <img src="images/sleepy-sloth.png" alt="Sleepy Sloth Plush" class="product-thumb">
+                    <h3>Sleepy Sloth Plush</h3>
+                    <p class="price">Rs. 1300</p>
+                    <a href="product-details.html?id=sleepy-sloth" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 27. Matcha Dino (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="600">
+                    <img src="images/matcha-dino.png" alt="Matcha Dino Friend" class="product-thumb">
+                    <h3>Matcha Dino Friend</h3>
+                    <p class="price">Rs. 600</p>
+                    <a href="product-details.html?id=matcha-dino" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 29. Sunny Duckling (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="750">
+                    <img src="images/sunny-duckling.png" alt="Sunny Duckling Plush" class="product-thumb">
+                    <h3>Sunny Duckling Plush</h3>
+                    <p class="price">Rs. 750</p>
+                    <a href="product-details.html?id=sunny-duckling" class="btn btn-outline">View Details</a>
+                </div>
+
+                <!-- 30. Galaxy Cat (Plushies) -->
+                <div class="product-card" data-category="plushies" data-price="750">
+                    <img src="images/galaxy-cat.png" alt="The Galaxy Cat" class="product-thumb">
+                    <h3>The Galaxy Cat</h3>
+                    <p class="price">Rs. 750</p>
+                    <a href="product-details.html?id=galaxy-cat" class="btn btn-outline">View Details</a>
+                </div>
+            </div>
+
+            <!-- Custom Order CTA Section -->
+            <div class="shop-cta">
+                <p>Create something uniquely yours.</p>
+                <a href="contact.html" class="cta-link">
+                    Take me there <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-img" src="" alt="Product Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Product Name</h2>
+                    <p class="modal-category" id="modal-category">Category</p>
+                    <p class="modal-price" id="modal-price">Price</p>
+                    <div class="modal-description">
+                        <h3>Description</h3>
+                        <p id="modal-desc">Handcrafted with love and attention to detail. This unique piece from Bloomy
+                            Hook brings warmth and charm to any space or outfit.</p>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://wa.me/923350298926" id="modal-order-btn" target="_blank"
+                            class="btn btn-sm">Order on WhatsApp</a>
+                        <a href="contact.html" class="btn btn-outline btn-sm">Request Customization</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-social-bar">
+            <div class="container">
+                <span>Get connected with us on our social media:</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bloomyhook?igsh=NG5keGoxc3NjZGtq" aria-label="Instagram"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CJbQryG2H/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@waqti_khuwab?_r=1&_t=ZS-93GU6Cxxsl3" aria-label="TikTok"
+                        target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-grid-4">
+                <div class="footer-col brand">
+                    <h3>BLOOMY HOOK</h3>
+                    <p>Bloomy Hook creates stunning, handmade crochet items for all your special moments. With quality
+                        yarn and creative designs, we bring warmth and comfort to your life.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>QUICK ACCESS</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Flowers</a></li>
+                        <li><a href="shop.html">Keychains</a></li>
+                        <li><a href="shop.html">Home Decor</a></li>
+                        <li><a href="shop.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACT</h3>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <p>+92 335 0298926</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <p>uroobbatool06@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>&copy; 2026 Copyright: BloomyHook.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

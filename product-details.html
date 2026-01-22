@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Bloomy Hook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-detail-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: clamp(1.5rem, 5vw, var(--spacing-lg));
+            padding: var(--spacing-lg) 0;
+            align-items: center;
+        }
+
+        .product-images {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .product-info h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-deep);
+            line-height: 1.1;
+        }
+
+        .product-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+
+        .p-price {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .p-category {
+            background: var(--accent-soft);
+            color: white;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .p-description {
+            font-size: 1rem;
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .p-features-title {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-deep);
+        }
+
+        .p-features {
+            list-style: none;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .p-features li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .p-features li::before {
+            content: '✿';
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+
+        .p-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            margin-top: var(--spacing-md);
+        }
+
+        .p-actions .btn {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 480px) {
+            .p-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.jpg" alt="Bloomy Hook Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" id="product-detail-page">
+        <div class="product-detail-layout">
+            <div class="product-images">
+                <img id="p-main-img" src="" alt=""
+                    style="width: 100%; border-radius: var(--border-radius); display: none;">
+                <div id="p-img-placeholder" class="main-img-placeholder"></div>
+            </div>
+            <div class="product-info">
+                <h1 id="p-name">Product Name</h1>
+                <div class="product-meta">
+                    <span class="p-price" id="p-price">$0.00</span>
+                    <span class="p-category" id="p-category">Category</span>
+                </div>
+                <p class="p-description" id="p-description">
+                    Loading product description...
+                </p>
+                <h2 class="p-features-title">Highlights</h2>
+                <ul class="p-features" id="p-features">
+                    <!-- Features will be loaded here -->
+                </ul>
+                <div class="p-actions">
+                    <a href="https://wa.me/923350298926" id="p-order-btn" target="_blank" class="btn btn-sm">Order
+                        Now</a>
+                    <a href="shop.html" class="btn btn-outline btn-sm">Go to Shop</a>
+                    <a href="index.html" class="btn btn-outline btn-sm">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-social-bar">
+            <div class="container">
+                <span>Get connected with us on our social media:</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bloomyhook?igsh=NG5keGoxc3NjZGtq" aria-label="Instagram"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CJbQryG2H/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@waqti_khuwab?_r=1&_t=ZS-93GU6Cxxsl3" aria-label="TikTok"
+                        target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-grid-4">
+                <div class="footer-col brand">
+                    <h3>BLOOMY HOOK</h3>
+                    <p>Bloomy Hook creates stunning, handmade crochet items for all your special moments. With quality
+                        yarn and creative designs, we bring warmth and comfort to your life.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>QUICK ACCESS</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Flowers</a></li>
+                        <li><a href="shop.html">Keychains</a></li>
+                        <li><a href="shop.html">Home Decor</a></li>
+                        <li><a href="shop.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACT</h3>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <p>+92 335 0298926</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <p>uroobbatool06@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>&copy; 2026 Copyright: BloomyHook.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

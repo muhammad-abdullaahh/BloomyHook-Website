@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bloomy Hook</title>
+    <meta name="description" content="Get in touch with Bloomy Hook for custom orders and inquiries.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.jpg" alt="Bloomy Hook Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <h1 class="section-title">Get in Touch</h1>
+            <p class="text-center">Have a custom idea or just want to say hello? We'd love to hear from you!</p>
+
+            <div class="contact-container">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/xpqpzgwb" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number (e.g. +92...)"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="form-submit-btn">Send With Love</button>
+                    <p id="form-status" style="margin-top: 1rem; font-weight: 500; display: none;"></p>
+
+                    <div id="success-overlay" class="success-overlay">
+                        <div class="success-content">
+                            <div class="checkmark-wrapper">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                </svg>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>We'll get back to you soon.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-social-bar">
+            <div class="container">
+                <span>Get connected with us on our social media:</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bloomyhook?igsh=NG5keGoxc3NjZGtq" aria-label="Instagram"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CJbQryG2H/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@waqti_khuwab?_r=1&_t=ZS-93GU6Cxxsl3" aria-label="TikTok"
+                        target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-grid-4">
+                <div class="footer-col brand">
+                    <h3>BLOOMY HOOK</h3>
+                    <p>Bloomy Hook creates stunning, handmade crochet items for all your special moments. With quality
+                        yarn and creative designs, we bring warmth and comfort to your life.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>QUICK ACCESS</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Flowers</a></li>
+                        <li><a href="shop.html">Keychains</a></li>
+                        <li><a href="shop.html">Home Decor</a></li>
+                        <li><a href="shop.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACT</h3>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <p>+92 335 0298926</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <p>uroobbatool06@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>&copy; 2026 Copyright: BloomyHook.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

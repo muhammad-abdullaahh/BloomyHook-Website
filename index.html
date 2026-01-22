@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomy Hook | Handmade with Love</title>
+    <meta name="description" content="Bloomy Hook - High-quality handmade crochet items, gifts, and cozy decor.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.jpg" alt="Bloomy Hook Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">Handmade with love</span>
+                    <h1>Where Yarn Meets Heart</h1>
+                    <p>Beautifully crafted crochet pieces designed to bring warmth, comfort, and a touch of floral
+                        elegance into your home.</p>
+                    <div class="hero-btns">
+                        <a href="shop.html" class="btn">Shop Handmade</a>
+                        <a href="about.html" class="btn btn-outline">Our Story</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/logo.jpg" alt="Bloomy Hook Logo" class="hero-logo-large">
+                </div>
+            </div>
+        </section>
+
+        <section class="featured container">
+            <h2 class="section-title">Featured Creations</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="home-decor" data-price="400">
+                    <img src="images/bibilophile-bloom.jpg" alt="The Bibilophile's Bloom" class="product-thumb">
+                    <h3>The Bibilophile's Bloom</h3>
+                    <p class="price">Rs. 400</p>
+                    <div class="product-actions">
+                        <a href="product-details.html?id=blush-coaster" class="btn btn-outline btn-sm">View Details</a>
+                        <a href="https://wa.me/923350298926?text=Hi!%20I%20want%20to%20order%20the%20Bibilophile's%20Bloom"
+                            class="btn btn-sm" target="_blank">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accessories" data-price="300">
+                    <img src="images/ghost-plush.jpg" alt="Ghostly Charm Keychain" class="product-thumb">
+                    <h3>Ghostly Charm Keychain</h3>
+                    <p class="price">Rs. 300</p>
+                    <div class="product-actions">
+                        <a href="product-details.html?id=ghost-keychain" class="btn btn-outline btn-sm">View Details</a>
+                        <a href="https://wa.me/923350298926?text=Hi!%20I%20want%20to%20order%20the%20Ghostly%20Charm%20Keychain"
+                            class="btn btn-sm" target="_blank">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="plushies" data-price="750">
+                    <img src="images/batman-buddy.jpg" alt="Dark Knight Buddy" class="product-thumb">
+                    <h3>Dark Knight Buddy</h3>
+                    <p class="price">Rs. 750</p>
+                    <div class="product-actions">
+                        <a href="product-details.html?id=batman-keychain" class="btn btn-outline btn-sm">View
+                            Details</a>
+                        <a href="https://wa.me/923350298926?text=Hi!%20I%20want%20to%20order%20the%20Dark%20Knight%20Buddy"
+                            class="btn btn-sm" target="_blank">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-more-container">
+                <a href="shop.html" class="shop-more-link">
+                    MUCH MORE ON SHOP <span class="arrow">⟶</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="how-its-made">
+            <div class="container">
+                <h2 class="section-title">Made with Love, One Stitch at a Time</h2>
+                <p class="subheading">Every Bloomy Hook piece is carefully handcrafted from start to finish.</p>
+                <div class="process-grid">
+                    <div class="process-card">
+                        <span class="process-icon">🧶</span>
+                        <h4>Premium Yarn Selection</h4>
+                        <p>Carefully chosen, soft, skin-friendly yarns in calming shades.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-icon">🪡</span>
+                        <h4>Hand-Crocheted with Care</h4>
+                        <p>Every piece is patiently crocheted by hand with attention to detail.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-icon">✨</span>
+                        <h4>Finishing Touches</h4>
+                        <p>Each item is shaped, checked, and perfected for quality.</p>
+                    </div>
+                    <div class="process-card">
+                        <span class="process-icon">🎁</span>
+                        <h4>Packed with Love</h4>
+                        <p>Thoughtfully packaged, ready to gift or cherish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-img" src="" alt="Product Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Product Name</h2>
+                    <p class="modal-category" id="modal-category">Category</p>
+                    <p class="modal-price" id="modal-price">Price</p>
+                    <div class="modal-description">
+                        <h3>Description</h3>
+                        <p id="modal-desc">Handcrafted with love and attention to detail. This unique piece from Bloomy
+                            Hook brings warmth and charm to any space or outfit.</p>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="https://wa.me/923350298926" id="modal-order-btn" target="_blank"
+                            class="btn btn-sm">Order on WhatsApp</a>
+                        <a href="contact.html" class="btn btn-outline btn-sm">Request Customization</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-social-bar">
+            <div class="container">
+                <span>Get connected with us on our social media:</span>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bloomyhook?igsh=NG5keGoxc3NjZGtq" aria-label="Instagram"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CJbQryG2H/" aria-label="Facebook" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@waqti_khuwab?_r=1&_t=ZS-93GU6Cxxsl3" aria-label="TikTok"
+                        target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container footer-grid-4">
+                <div class="footer-col brand">
+                    <h3>BLOOMY HOOK</h3>
+                    <p>Bloomy Hook creates stunning, handmade crochet items for all your special moments. With quality
+                        yarn and creative designs, we bring warmth and comfort to your life.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>QUICK ACCESS</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Flowers</a></li>
+                        <li><a href="shop.html">Keychains</a></li>
+                        <li><a href="shop.html">Home Decor</a></li>
+                        <li><a href="shop.html">Custom Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>CONTACT</h3>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <p>+92 335 0298926</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <p>uroobbatool06@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="container">
+                <p>&copy; 2026 Copyright: BloomyHook.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
