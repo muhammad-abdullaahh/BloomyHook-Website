@@ -65,5 +65,22 @@ No backend setup is required.
 
 ---
 
-## 📁 Folder Structure  
+
+---
+
+## 🎨 Tone & Branding  
+
+Bloomy Hook is all about **handmade with love**. Every design choice — from the soft pink & gold color palette to the smooth JS animations — reflects warmth, craftsmanship, and a high-end artisanal feel.  
+
+✨ Explore, browse, and place your orders effortlessly — because every stitch tells a story. ✿  
+
+---
+
+## 📞 Contact / Order  
+
+Use the **'Order Now'** buttons to directly place your order via WhatsApp. Each message is pre-filled with the product details for a seamless experience.  
+
+---
+
+Made with 🧶 and ❤️ by the author.
 
